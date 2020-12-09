@@ -19,25 +19,11 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyHomePage(),
+      home: LoginPage(),
       routes: {
         LoginPage.routeName: (context) => LoginPage(),
         DashboardPage.routeName: (context) => DashboardPage(),
       },
-    );
-  }
-}
-
-class MyHomePage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Bloc & Flavors'),
-      ),
-      body: Center(
-        child: Text('dddd'),
-      ),
     );
   }
 }
