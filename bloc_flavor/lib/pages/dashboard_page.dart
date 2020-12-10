@@ -1,9 +1,10 @@
-import 'package:bloc_flavor/blocs/app_config_bloc.dart';
-import 'package:bloc_flavor/blocs/get_data_bloc.dart';
-import 'package:bloc_flavor/blocs/auth_bloc.dart';
-import 'package:bloc_flavor/pages/login_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
+import '../blocs/app_config_bloc.dart';
+import '../blocs/get_data_bloc.dart';
+import '../blocs/auth_bloc.dart';
+import '../pages/login_page.dart';
 
 class DashboardPage extends StatefulWidget {
   static const routeName = '/dashboard';

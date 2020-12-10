@@ -1,7 +1,8 @@
-import 'package:bloc_flavor/blocs/auth_bloc.dart';
-import 'package:bloc_flavor/pages/dashboard_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
+import '../blocs/auth_bloc.dart';
+import '../pages/dashboard_page.dart';
 
 class LoginPage extends StatefulWidget {
   static const routeName = '/login';

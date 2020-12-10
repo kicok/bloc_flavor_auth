@@ -1,10 +1,10 @@
-import 'package:bloc_flavor/blocs/app_config_bloc.dart';
-import 'package:bloc_flavor/blocs/get_data_bloc.dart';
-import 'package:bloc_flavor/repositories/get_data_repository.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:http/http.dart' as http;
 
+import './blocs/app_config_bloc.dart';
+import './blocs/get_data_bloc.dart';
+import './repositories/get_data_repository.dart';
 import 'models/app_config.dart';
 import 'pages/dashboard_page.dart';
 import 'pages/login_page.dart';
