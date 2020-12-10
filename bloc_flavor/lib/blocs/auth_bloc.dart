@@ -1,10 +1,11 @@
 import 'dart:async';
 
-import 'package:bloc_flavor/blocs/app_config_bloc.dart';
-import 'package:bloc_flavor/repositories/auth_repository.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
+import 'app_config_bloc.dart';
+import '../repositories/auth_repository.dart';
 
 // events
 abstract class AuthEvent extends Equatable {

@@ -1,11 +1,12 @@
 import 'dart:async';
 
-import 'package:bloc_flavor/blocs/app_config_bloc.dart';
-import 'package:bloc_flavor/repositories/auth_repository.dart';
-import 'package:bloc_flavor/repositories/get_data_repository.dart';
+import 'app_config_bloc.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
+import '../repositories/auth_repository.dart';
+import '../repositories/get_data_repository.dart';
 
 //events
 abstract class GetDataEvent extends Equatable {}

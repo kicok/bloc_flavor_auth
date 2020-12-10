@@ -1,6 +1,7 @@
-import 'package:bloc_flavor/models/app_config.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
+import '../models/app_config.dart';
 
 // event
 
@@ -19,7 +20,9 @@ class AppConfigBloc extends Bloc<AppConfigEvent, AppConfigState> {
   final AppConfig appConfig;
   AppConfigBloc({this.appConfig})
       : assert(appConfig != null),
-        super(AppConfigState(appConfig: appConfig));
+        super(AppConfigState(appConfig: appConfig)) {
+    add(AppConfigEvent());
+  }
 
   @override
   Stream<AppConfigState> mapEventToState(AppConfigEvent event) async* {
