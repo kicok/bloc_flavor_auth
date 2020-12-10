@@ -3,6 +3,8 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 // event
+
+//이벤트가 단 하나밖에 없으므로 abstract class가 필요 없음.
 class AppConfigEvent {}
 
 // state
