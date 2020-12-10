@@ -107,9 +107,9 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
       if (await authRepository.hasToken()) {
         final String token = await authRepository.getToken();
         yield Authenticated(token: token); // 실제 현재 프로젝트에서는 활용되고 있지는 않음.
+      } else {
+        yield UnAuthenticated();
       }
-    } else {
-      yield UnAuthenticated();
     }
 
     if (event is LogoutRequested) {
